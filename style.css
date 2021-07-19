@@ -19,6 +19,7 @@ body,
 
 .ip-head {
   height: 30%;
+  min-height: 300px;
   text-align: center;
   background-image: url(/images/pattern-bg.png);
   justify-content: flex-start;
@@ -29,6 +30,7 @@ body,
 .ip-search {
   width: 30%;
   height: 20%;
+  min-height: 40px;
 }
 
 .ip-search > * {

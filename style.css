@@ -18,8 +18,7 @@ body,
 }
 
 .ip-head {
-  height: 30%;
-  min-height: 300px;
+  height: 230px;
   text-align: center;
   background-image: url(/images/pattern-bg.png);
   justify-content: flex-start;
@@ -31,6 +30,7 @@ body,
   width: 30%;
   height: 20%;
   min-height: 40px;
+  max-width: 350px;
 }
 
 .ip-search > * {
@@ -60,16 +60,16 @@ body,
 }
 
 .main {
-  height: 70%;
+  height: calc(100% - 230px);
 }
 
 .display-bar {
-  position: absolute;
+  position: fixed;
   width: 80%;
   justify-content: space-around;
   text-align: center;
   margin: 0 10%;
-  top: 25%;
+  top: 200px;
   background-color: white;
   box-shadow: 0 0 10px;
   border-radius: 10px;
@@ -114,17 +114,18 @@ body,
   height: 100%;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
   .ip-search {
     width: 85%;
     height: 15%;
   }
 
   .ip-head {
-    height: 40%;
+    height: 300px;
   }
 
   .display-bar {
+    top: 175px;
     flex-direction: column !important;
     padding: 10px 0;
   }

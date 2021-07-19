@@ -1,0 +1,146 @@
+html,
+body,
+.container {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Barlow', sans-serif;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-dir-col {
+  flex-direction: column;
+}
+
+.ip-head {
+  height: 30%;
+  text-align: center;
+  background-image: url(/images/pattern-bg.png);
+  justify-content: flex-start;
+  padding-top: 3%;
+  color: #fff;
+}
+
+.ip-search {
+  width: 30%;
+  height: 20%;
+}
+
+.ip-search > * {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+}
+
+.ip-search input {
+  width: 85%;
+  padding: 0 5px;
+  border-radius: 12px 0 0 12px;
+  padding: 2% 5%;
+}
+
+.ip-search input:focus {
+  border-color: red;
+}
+
+.ip-search button {
+  width: 12%;
+  border-radius: 0 12px 12px 0;
+  background-color: #000;
+  color: #fff;
+}
+
+.main {
+  height: 70%;
+}
+
+.display-bar {
+  position: absolute;
+  width: 80%;
+  justify-content: space-around;
+  text-align: center;
+  margin: 0 10%;
+  top: 25%;
+  background-color: white;
+  box-shadow: 0 0 10px;
+  border-radius: 10px;
+  z-index: 1000;
+}
+
+.display-card::after {
+  content: '';
+  height: 70px;
+  width: 2px;
+  border-right: 1px solid black;
+  position: absolute;
+  right: -7%;
+}
+
+.display-card {
+  width: 20%;
+  height: 100px;
+  padding: 20px 0;
+  position: relative;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.display-card:last-child::after {
+  height: 0;
+}
+
+.display-card h5 {
+  text-transform: uppercase;
+  color: #737373;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.display-card h2 {
+  margin: 0;
+  height: 55px;
+}
+
+#mapid {
+  height: 100%;
+}
+
+@media only screen and (max-width: 700px) {
+  .ip-search {
+    width: 85%;
+    height: 15%;
+  }
+
+  .ip-head {
+    height: 40%;
+  }
+
+  .display-bar {
+    flex-direction: column !important;
+    padding: 10px 0;
+  }
+  .display-card {
+    width: 80%;
+    height: 20px;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  .display-card::after {
+    height: 0;
+  }
+
+  .display-card h2 {
+    font-size: 1.3em;
+    text-align: center;
+  }
+  .display-card h5 {
+    font-size: 0.8em;
+  }
+}
